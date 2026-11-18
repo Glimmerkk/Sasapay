@@ -1,0 +1,11 @@
+.env
+bots.json
+data/
+node_modules/
+.DS_Store
+bots.json
+bots.example.json
+.env
+.env.*
+data/
+node_modules/

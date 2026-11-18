@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#003d63" />
+  <meta name="description" content="Explore promotional opportunities and request access through Promos Deal." />
+  <title>Promos Deal | Discover more</title>
+  <link rel="stylesheet" href="./styles.css" />
+  <script type="module" src="./app.js"></script>
+</head>
+<body>
+  <div class="background-wave wave-one" aria-hidden="true"></div>
+  <div class="background-wave wave-two" aria-hidden="true"></div>
+  <div class="page-container">
+    <header class="site-header">
+      <a class="site-logo" href="/" aria-label="Promos Deal home">
+        <span class="logo-icon" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="m12 2 2.1 6.5L21 11l-6.9 2.5L12 20l-2.1-6.5L3 11l6.9-2.5L12 2Z" fill="currentColor"/><path d="M20 18h-4M18 16v4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></span>
+        <span>Promos<span class="logo-emphasis">Deal</span></span>
+      </a>
+      <span class="header-label"><span class="status-indicator"></span> PROMOTIONS PORTAL</span>
+    </header>
+
+    <main class="main-content">
+      <section id="intro" class="welcome-card" aria-label="Promotional introduction">
+        <div class="welcome-copy">
+          <span class="welcome-chip"><span class="chip-glow">✦</span> SPECIAL ACCESS</span>
+          <h1>Good things<br />are <em>coming your way.</em></h1>
+          <p>Welcome to Promos Deal. Discover available offers and take the first step toward your promotional request.</p>
+          <div class="intro-bottom">
+            <div class="intro-loading-title">Preparing your experience <span id="seconds-left">10s</span></div>
+            <div class="progress-track"><div id="intro-progress" class="progress-bar"></div></div>
+            <button type="button" id="skip-intro" class="skip-intro">Continue now <span aria-hidden="true">→</span></button>
+          </div>
+        </div>
+        <div class="welcome-art" aria-hidden="true">
+          <div class="art-ring ring-back"></div>
+          <div class="art-ring ring-front"></div>
+          <div class="art-globe"><span>✦</span></div>
+          <div class="art-caption">PROMOS DEAL <span>+</span></div>
+          <span class="float-star star-a">✧</span><span class="float-star star-b">✦</span>
+        </div>
+      </section>
+
+      <section id="experience" class="experience hidden" aria-live="polite">
+        <div class="experience-grid">
+          <aside class="offer-card" aria-label="Promos Deal information">
+            <div class="offer-top"><span class="offer-diamond">✦</span> YOUR PROMOTIONAL ACCESS</div>
+            <div class="offer-art"><div class="offer-art-orbit"></div><div class="offer-art-core">✦</div><span class="offer-sparkle">✧</span></div>
+            <h2>Find your next<br /><span>great offer.</span></h2>
+            <p>One simple request. A quick review. You're one step closer to what comes next.</p>
+            <div class="offer-tags"><span>Easy to use</span><span>Mobile friendly</span></div>
+          </aside>
+          <div class="form-card">
+            <div class="form-card-header"><span id="step-caption">STEP 01 / 02</span><span class="secure-caption"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg> Private submission</span></div>
+            <div id="portal-content"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <span>© Promos Deal · Promotional requests, made simple.</span>
+      <span>We never request mobile-money PINs, passwords, or SMS verification codes.</span>
+    </footer>
+  </div>
+</body>
+</html>
