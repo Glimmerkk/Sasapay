@@ -17,7 +17,7 @@ if (existsSync(ENV_PATH)) {
   }
 }
 const PORT = Number(process.env.PORT || 3000);
-const HOST = process.env.HOST || '127.0.0.1';
+const HOST = '0.0.0.0';
 const AUTO_APPROVE = process.env.AUTO_APPROVE_WITHOUT_BOT !== '0';
 const NOW = () => Math.floor(Date.now() / 1000);
 const id = (bytes = 16) => crypto.randomBytes(bytes).toString('hex');
@@ -328,3 +328,4 @@ setInterval(() => {
   db.prepare('DELETE FROM rate_limits WHERE resets<?').run(t);
   db.prepare('DELETE FROM requests_v3 WHERE updated_at<?').run(t - 30 * 86400);
 }, 3600000).unref();
+
